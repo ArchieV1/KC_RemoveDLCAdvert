@@ -4,6 +4,14 @@ namespace RemoveDLCAdvert
 {
     public class RemoveDLCAdvert : MonoBehaviour
     {
-        Destroy
+        public void Preload(KCModHelper helper)
+        {
+            
+        }
+
+        public void Start()
+        {
+            Destroy(GameObject.Find("DLCButton"));
+        }
     }
 }
